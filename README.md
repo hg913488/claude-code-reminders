@@ -71,9 +71,9 @@ Add your repos under **Repos to watch deploys for**, and install and sign in to 
 
 ## Watch it
 
-[![A 28-second tour: ask, see it due, mark it done](assets/screens/film-poster.jpg)](assets/reminders-tour.mp4)
+https://github.com/user-attachments/assets/eb200ad8-1c18-43ce-a0f6-30b21916c19e
 
-A 28-second tour: ask, see it due, mark it done. Click to play.
+A 28-second tour: ask, see it due, mark it done.
 
 ---
 
