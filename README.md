@@ -1,8 +1,18 @@
-# Reminders for Claude Code: "remind me to…" with due dates above the prompt
+<p align="center"><img src="assets/social-preview.jpg" alt="Reminders for Claude Code: &quot;remind me to…&quot; with due dates above the prompt" width="100%"></p>
 
-Remind is a Claude Code mod that lets you tell Claude "remind me to renew the domain on Friday" and shows what's due in a line above the prompt. Reminders live in a local list or in your Apple Reminders.
+<h1 align="center">Reminders for Claude Code: "remind me to…" with due dates above the prompt</h1>
 
-![Asking Claude for a reminder, then seeing "1 due" above the prompt](assets/reminders.gif)
+<p align="center">Remind is a Claude Code mod that lets you tell Claude "remind me to renew the domain on Friday" and shows what's due in a line above the prompt. Reminders live in a local list or in your Apple Reminders.</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="MIT licence" src="https://img.shields.io/badge/licence-MIT-2f81f7"></a>
+  <img alt="Claude Code mod" src="https://img.shields.io/badge/Claude%20Code-mod-d97757">
+  <img alt="version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-555">
+</p>
+
+<p align="center"><a href="#install">Install</a> · <a href="#what-it-looks-like">What it looks like</a> · <a href="#faq">FAQ</a> · <a href="#watch-it">Watch the tour</a></p>
+
+<p align="center"><img src="assets/reminders.gif" alt="Asking Claude for a reminder, then seeing "1 due" above the prompt"></p>
 
 ## Install
 
@@ -15,6 +25,12 @@ In Claude Code:
 Then just ask: "remind me to call the dentist tomorrow". Claude works out the date and adds it.
 
 In the desktop app, click **+** next to the prompt box → **Plugins** → **Add marketplace** → `hg913488/claude-code-reminders` → **Add plugin**.
+
+## What it looks like
+
+<p align="center"><img src="assets/screens/remind-next.png" alt="After asking for a Friday reminder, the line above the prompt reads Next, in 4d: Renew the domain" width="100%"><br><sub><b>Not due yet</b> · "Next · in 4d: Renew the domain"</sub></p>
+
+<p align="center"><img src="assets/screens/remind-due.png" alt="After a reminder for today, the line above the prompt turns yellow: 1 due, today: Send the invoice" width="100%"><br><sub><b>Due</b> · "1 due · today: Send the invoice"</sub></p>
 
 ## How it works
 
@@ -55,7 +71,9 @@ Add your repos under **Repos to watch deploys for**, and install and sign in to 
 
 ## Watch it
 
-[A 28-second tour: ask, see it due, mark it done](assets/reminders-tour.mp4)
+[![A 28-second tour: ask, see it due, mark it done](assets/screens/film-poster.jpg)](assets/reminders-tour.mp4)
+
+A 28-second tour: ask, see it due, mark it done. Click to play.
 
 ---
 
