@@ -75,6 +75,12 @@ https://github.com/user-attachments/assets/eb200ad8-1c18-43ce-a0f6-30b21916c19e
 
 A 28-second tour: ask, see it due, mark it done.
 
+## More Claude Code mods
+
+- [Retro Chat](https://github.com/hg913488/claude-code-retro-skins): iMessage, MSN, AIM and IRC skins for your chat
+- [Agent Status](https://github.com/hg913488/claude-code-agent-status): a side panel showing what every subagent is doing
+- [Hyperspace](https://github.com/hg913488/claude-code-hyperspace): a space-opera spinner and a blade that ignites
+
 ---
 
 MIT licensed. Made by [HG](https://github.com/hg913488). Not affiliated with Apple; Reminders is Apple's app, named here only to describe the integration.
