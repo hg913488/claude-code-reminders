@@ -1,0 +1,27 @@
+# Remind
+
+> Remind is a Claude Code plugin that lets you say "remind me to..." and shows what is due in a line above the prompt.
+
+Reminders live in a local list (`~/.claude/remind/reminders.json`) or in your Apple Reminders on a Mac. Claude adds, lists and completes them with three tools: `add_reminder`, `list_reminders` and `complete_reminder`. The `/remind` pane also shows the current folder's git status and, if you set repos, the latest deploys. MIT licensed.
+
+Install, in Claude Code:
+
+```
+/plugin install remind --marketplace hg913488/claude-code-reminders
+```
+
+## Docs
+
+- [README](https://github.com/hg913488/claude-code-reminders/blob/main/README.md): install, how it works, settings, FAQ
+- [AGENTS.md](https://github.com/hg913488/claude-code-reminders/blob/main/AGENTS.md): layout, checks and gotchas for coding agents
+
+## Source
+
+- [hooks/register.tsx](https://github.com/hg913488/claude-code-reminders/blob/main/hooks/register.tsx): the whole mod: tools, band, pane
+- [types/index.d.ts](https://github.com/hg913488/claude-code-reminders/blob/main/types/index.d.ts): state types
+- [tests/remind.test.tsx](https://github.com/hg913488/claude-code-reminders/blob/main/tests/remind.test.tsx): tests
+- [.claude-plugin/plugin.json](https://github.com/hg913488/claude-code-reminders/blob/main/.claude-plugin/plugin.json): manifest and settings
+
+## Optional
+
+- [LICENSE](https://github.com/hg913488/claude-code-reminders/blob/main/LICENSE): MIT

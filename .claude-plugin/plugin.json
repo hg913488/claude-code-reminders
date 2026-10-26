@@ -1,0 +1,32 @@
+{
+  "name": "remind",
+  "version": "0.1.0",
+  "description": "Reminders inside Claude Code: say \"remind me to…\" and a band above the prompt shows what's due. Kept in a local list or your Apple Reminders, with git and deploy status in a pane.",
+  "author": { "name": "HG", "url": "https://github.com/hg913488" },
+  "homepage": "https://github.com/hg913488/claude-code-reminders",
+  "repository": "https://github.com/hg913488/claude-code-reminders",
+  "license": "MIT",
+  "keywords": ["reminders", "todo", "to-do", "apple-reminders", "due-dates", "git", "deploys", "pane"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "source": {
+      "type": "string",
+      "title": "Where reminders live",
+      "description": "local: a list Claude keeps in ~/.claude/remind/reminders.json, on any computer. apple: a list in the Reminders app (macOS).",
+      "options": ["local", "apple"],
+      "default": "local"
+    },
+    "appleList": {
+      "type": "string",
+      "title": "Reminders list",
+      "description": "The Reminders app list to read and add to, when the source is apple. Made for you on the first reminder if it doesn't exist.",
+      "default": "Claude"
+    },
+    "repos": {
+      "type": "string",
+      "title": "Repos to watch deploys for",
+      "description": "GitHub repos whose latest production deploy shows in the pane, comma-separated (owner/repo, owner/other). Needs the gh CLI, signed in. Leave empty to hide deploys.",
+      "default": ""
+    }
+  }
+}

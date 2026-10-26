@@ -1,0 +1,6 @@
+{
+  "name": "claude-code-reminders",
+  "owner": { "name": "HG" },
+  "description": "Reminders inside Claude Code: say \"remind me to…\" and see what's due above the prompt.",
+  "plugins": [{ "name": "remind", "source": "./" }]
+}
