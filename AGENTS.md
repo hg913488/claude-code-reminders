@@ -10,7 +10,7 @@ Remind (`remind`) is a Claude Code plugin ("mod"). The user says "remind me to..
 
 - `.claude-plugin/plugin.json`: manifest and `userConfig` (`source`, `appleList`, `repos`).
 - `.claude-plugin/marketplace.json`: marketplace entry, so `hg913488/claude-code-reminders` installs `remind`.
-- `.claude-plugin/types/`: the Claude Code type declarations used by `tsc`.
+- `.claude-plugin/types/`: the Claude Code type declarations used by `tsc`. Claude Code writes this folder when it loads the mod, and it is not committed, so a fresh clone does not have it.
 - `hooks/register.tsx`: the whole mod. `hooks/hooks.json` points to it.
 - `types/index.d.ts`: types for the mod's state (`Todo`, `GitState`, `Deploy`).
 - `tests/remind.test.tsx`: tests, run with `claude plugin test .`.
@@ -36,7 +36,7 @@ npx -y -p typescript@5.6.3 tsc --noEmit -p .
 claude plugin validate .
 ```
 
-Expected: 4 tests pass, `tsc` prints nothing, validate passes.
+Expected: 4 tests pass, `tsc` prints nothing, validate passes. In a fresh clone, `tsc` fails (missing `Map`, `Promise`, `Shaped`) until `.claude-plugin/types/` exists. Claude Code creates it the first time it loads the mod, installed or with `claude --plugin-dir .`.
 
 ## Gotchas
 
