@@ -61,7 +61,7 @@ Yes. Set **Where reminders live** to `apple`. The first time, macOS asks whether
 In `~/.claude/remind/reminders.json`, as plain JSON you can read or edit.
 
 **Does it work on Windows or Linux?**
-The local list does. The Apple Reminders option is macOS only.
+On Linux, the local list does. On Windows, run Claude Code under WSL or Git Bash: the mod relies on Unix tools and paths (`date`, a `HOME` folder, `/`-separated paths). The Apple Reminders option is macOS only.
 
 **Why don't I see deploys?**
 Add your repos under **Repos to watch deploys for**, and install and sign in to the GitHub CLI (`gh auth login`). Deploys are checked when you open the pane, when you press Refresh, and shortly after a `git push`.
